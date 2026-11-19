@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgroPulse — Gestión agropecuaria para el NOA</title>
+  <meta name="description" content="AgroPulse reúne lo que producís, gastás y vendés en todas tus fincas y te muestra rendimiento, ganancia y rentabilidad por finca, lote, cultivo y campaña.">
+  <meta name="theme-color" content="#0a1c15">
+  <meta property="og:title" content="AgroPulse — Sabé cuánto te deja cada lote">
+  <meta property="og:description" content="Gestión agropecuaria hecha en el NOA: producción, gastos, ventas y rentabilidad en un solo lugar.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div style="width: 100%; background: #fbfbf7; color: #10271e; font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 1.55" data-canvas-width="1440" data-canvas-height="7400">
+
+  <!-- Banda de feria -->
+  
+    <div style="background: #b9dd73; color: #10271e; padding: 10px 20px; text-align: center; font-size: 14px; font-weight: 500">
+      <strong>Encontranos en [NOMBRE DE LA FERIA] · Stand [N° DE STAND]</strong> — Te mostramos AgroPulse funcionando, en vivo.
+    </div>
+  
+
+  <!-- HERO -->
+  <header style="background: #0a1c15; color: #ffffff; padding-bottom: clamp(56px,8vw,104px)">
+    <nav class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-top: 22px; padding-bottom: 22px" aria-label="Principal">
+      <a href="#inicio" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #ffffff">
+        <span style="width: 34px; height: 34px; border-radius: 9px; background: #b9dd73; display: flex; align-items: flex-end; justify-content: center; gap: 3px; padding-bottom: 8px; box-sizing: border-box" aria-hidden="true">
+          <span style="width: 4px; height: 8px; background: #0a1c15; border-radius: 2px"></span>
+          <span style="width: 4px; height: 13px; background: #0a1c15; border-radius: 2px"></span>
+          <span style="width: 4px; height: 18px; background: #0a1c15; border-radius: 2px"></span>
+        </span>
+        <span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 21px; letter-spacing: -0.02em">Agro<span style="color: #b9dd73">Pulse</span></span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 28px; flex-wrap: wrap; font-size: 15px">
+        <a href="#plataforma" style="color: #cfdcd4; text-decoration: none">Plataforma</a>
+        <a href="#como-funciona" style="color: #cfdcd4; text-decoration: none">Cómo funciona</a>
+        <a href="#preguntas" style="color: #cfdcd4; text-decoration: none">Preguntas</a>
+        <a href="#nosotros" style="color: #cfdcd4; text-decoration: none">Nosotros</a>
+        <a href="https://agropulsenoa.netlify.app/login" style="background: #b9dd73; color: #0a1c15; text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Pedí una demo</a>
+      </div>
+    </nav>
+
+    <div id="inicio" class="wrap" style="display: flex; flex-wrap: wrap; gap: clamp(40px,5vw,72px); align-items: center; padding-top: clamp(32px,5vw,64px)">
+      <div style="flex: 1 1 440px; min-width: 0">
+        <div class="eyebrow" style="color: #b9dd73; margin-bottom: 22px">Gestión agropecuaria · Hecha en el NOA</div>
+        <h1 style="font-family: Manrope, sans-serif; font-weight: 800; font-size: clamp(44px,6.4vw,82px); line-height: 0.98; letter-spacing: -0.045em; margin: 0">Sabé cuánto te deja <span style="color: #b9dd73">cada lote.</span></h1>
+        <p style="font-size: 19px; color: #bdcbc3; max-width: 540px; margin: 26px 0 0">AgroPulse reúne en un solo lugar lo que producís, gastás y vendés en todas tus fincas, y te muestra el rendimiento, la ganancia y la rentabilidad por finca, lote, cultivo y campaña. La información, clara y a mano, para que decidas vos.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px">
+          <a href="https://agropulsenoa.netlify.app/login" style="background: #b9dd73; color: #0a1c15; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px 26px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px">Quiero ver una demo <span aria-hidden="true">→</span></a>
+          <a href="#como-funciona" style="color: #ffffff; text-decoration: none; font-weight: 500; font-size: 17px; padding: 16px 26px; border-radius: 999px; border: 1px solid #3a5247; display: inline-flex; align-items: center; gap: 10px">Cómo funciona <span aria-hidden="true">↓</span></a>
+        </div>
+        <div style="display: flex; gap: 22px; flex-wrap: wrap; margin-top: 36px; font-size: 14px; color: #9fb3a8">
+          <span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Desde la compu o el celular</span>
+          <span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Sin instalar nada</span>
+          <span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Reportes en PDF y Excel</span>
+        </div>
+      </div>
+
+      <!-- Mockup del panel -->
+      <div style="flex: 1 1 520px; min-width: 0; background: #10271e; border: 1px solid #24443a; border-radius: 20px; padding: 22px; box-shadow: 0 40px 80px -30px rgba(0,0,0,0.6)">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 18px">
+          <div>
+            <div style="font-size: 12px; color: #8fa69a">AGROPULSE / PANEL</div>
+            <div style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">Campaña 2025/26 · Todas las fincas</div>
+          </div>
+          <span style="font-size: 12px; color: #0a1c15; background: #b9dd73; padding: 4px 10px; border-radius: 999px; font-weight: 700">Datos de ejemplo</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(118px, 1fr)); gap: 10px">
+          
+            <div style="background: #0a1c15; border: 1px solid #24443a; border-radius: 12px; padding: 14px">
+              <div style="font-size: 12px; color: #8fa69a">Ingresos</div>
+              <div style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.02em; margin-top: 4px; color: #ffffff">$ 412,6 M</div>
+            </div>
+          
+            <div style="background: #0a1c15; border: 1px solid #24443a; border-radius: 12px; padding: 14px">
+              <div style="font-size: 12px; color: #8fa69a">Gastos</div>
+              <div style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.02em; margin-top: 4px; color: #ffffff">$ 268,3 M</div>
+            </div>
+          
+            <div style="background: #0a1c15; border: 1px solid #24443a; border-radius: 12px; padding: 14px">
+              <div style="font-size: 12px; color: #8fa69a">Ganancia</div>
+              <div style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.02em; margin-top: 4px; color: #b9dd73">$ 144,3 M</div>
+            </div>
+          
+            <div style="background: #0a1c15; border: 1px solid #24443a; border-radius: 12px; padding: 14px">
+              <div style="font-size: 12px; color: #8fa69a">Rentabilidad</div>
+              <div style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.02em; margin-top: 4px; color: #b9dd73">53,8 %</div>
+            </div>
+          
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px">
+          <div style="flex: 3 1 260px; min-width: 0; background: #0a1c15; border: 1px solid #24443a; border-radius: 12px; padding: 16px">
+            <div style="display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: 13px">
+              <span style="font-weight: 700">Ingresos vs. gastos por mes</span>
+              <span style="display: flex; gap: 12px; color: #8fa69a"><span style="display: flex; align-items: center; gap: 5px"><span style="width: 9px; height: 9px; border-radius: 2px; background: #b9dd73"></span>Ingresos</span><span style="display: flex; align-items: center; gap: 5px"><span style="width: 9px; height: 9px; border-radius: 2px; background: #4f7a66"></span>Gastos</span></span>
+            </div>
+            <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; height: 140px; margin-top: 16px; border-bottom: 1px solid #24443a">
+              
+                <div style="flex: 1; display: flex; align-items: flex-end; justify-content: center; gap: 3px; height: 100%">
+                  <div style="width: 40%; background: #b9dd73; border-radius: 3px 3px 0 0; height: 38%"></div>
+                  <div style="width: 40%; background: #4f7a66; border-radius: 3px 3px 0 0; height: 52%"></div>
+                </div>
+              
+                <div style="flex: 1; display: flex; align-items: flex-end; justify-content: center; gap: 3px; height: 100%">
+                  <div style="width: 40%; background: #b9dd73; border-radius: 3px 3px 0 0; height: 30%"></div>
+                  <div style="width: 40%; background: #4f7a66; border-radius: 3px 3px 0 0; height: 44%"></div>
+                </div>
+              
+                <div style="flex: 1; display: flex; align-items: flex-end; justify-content: center; gap: 3px; height: 100%">
+                  <div style="width: 40%; background: #b9dd73; border-radius: 3px 3px 0 0; height: 62%"></div>
+                  <div style="width: 40%; background: #4f7a66; border-radius: 3px 3px 0 0; height: 40%"></div>
+                </div>
+              
+                <div style="flex: 1; display: flex; align-items: flex-end; justify-content: center; gap: 3px; height: 100%">
+                  <div style="width: 40%; background: #b9dd73; border-radius: 3px 3px 0 0; height: 88%"></div>
+                  <div style="width: 40%; background: #4f7a66; border-radius: 3px 3px 0 0; height: 46%"></div>
+                </div>
+              
+                <div style="flex: 1; display: flex; align-items: flex-end; justify-content: center; gap: 3px; height: 100%">
+                  <div style="width: 40%; background: #b9dd73; border-radius: 3px 3px 0 0; height: 100%"></div>
+                  <div style="width: 40%; background: #4f7a66; border-radius: 3px 3px 0 0; height: 55%"></div>
+                </div>
+              
+                <div style="flex: 1; display: flex; align-items: flex-end; justify-content: center; gap: 3px; height: 100%">
+                  <div style="width: 40%; background: #b9dd73; border-radius: 3px 3px 0 0; height: 74%"></div>
+                  <div style="width: 40%; background: #4f7a66; border-radius: 3px 3px 0 0; height: 48%"></div>
+                </div>
+              
+            </div>
+            <div style="display: flex; justify-content: space-between; gap: 8px; margin-top: 8px; font-size: 11px; color: #8fa69a">
+              <span style="flex: 1; text-align: center">ENE</span><span style="flex: 1; text-align: center">FEB</span><span style="flex: 1; text-align: center">MAR</span><span style="flex: 1; text-align: center">ABR</span><span style="flex: 1; text-align: center">MAY</span><span style="flex: 1; text-align: center">JUN</span>
+            </div>
+          </div>
+          <div style="flex: 2 1 200px; min-width: 0; background: #0a1c15; border: 1px solid #24443a; border-radius: 12px; padding: 16px">
+            <div style="font-size: 13px; font-weight: 700; margin-bottom: 12px">Ganancia por cultivo</div>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 12px"><span style="color: #cfdcd4">Soja</span><span style="color: #b9dd73; font-weight: 700">$ 61,8 M</span></div>
+                  <div style="height: 6px; background: #1a3329; border-radius: 3px; margin-top: 4px"><div style="height: 6px; border-radius: 3px; background: #b9dd73; width: 100%"></div></div>
+                </div>
+              
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 12px"><span style="color: #cfdcd4">Caña de azúcar</span><span style="color: #b9dd73; font-weight: 700">$ 42,5 M</span></div>
+                  <div style="height: 6px; background: #1a3329; border-radius: 3px; margin-top: 4px"><div style="height: 6px; border-radius: 3px; background: #b9dd73; width: 69%"></div></div>
+                </div>
+              
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 12px"><span style="color: #cfdcd4">Limón</span><span style="color: #b9dd73; font-weight: 700">$ 28,9 M</span></div>
+                  <div style="height: 6px; background: #1a3329; border-radius: 3px; margin-top: 4px"><div style="height: 6px; border-radius: 3px; background: #b9dd73; width: 47%"></div></div>
+                </div>
+              
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 12px"><span style="color: #cfdcd4">Maíz</span><span style="color: #b9dd73; font-weight: 700">$ 15,2 M</span></div>
+                  <div style="height: 6px; background: #1a3329; border-radius: 3px; margin-top: 4px"><div style="height: 6px; border-radius: 3px; background: #b9dd73; width: 25%"></div></div>
+                </div>
+              
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 12px"><span style="color: #cfdcd4">Poroto</span><span style="color: #f0a35e; font-weight: 700">−$ 4,1 M</span></div>
+                  <div style="height: 6px; background: #1a3329; border-radius: 3px; margin-top: 4px"><div style="height: 6px; border-radius: 3px; background: #f0a35e; width: 7%"></div></div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; margin-top: 10px; background: #2b2a12; border: 1px solid #5c5520; border-radius: 12px; padding: 12px 14px; font-size: 13px; color: #f0e7b0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f2d75c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg>
+          <span><strong>3 labores por vencer</strong> · Aplicación en La Esperanza, Lote 7 — vence mañana</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 01 EL DESAFÍO -->
+  <section id="desafio" style="background: #1c1e12; color: #e6e8dc; padding: clamp(72px,9vw,120px) 0">
+    <div class="wrap">
+      <div class="eyebrow" style="color: #a9ad98">01 / El desafío</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between; margin-top: 20px">
+        <h2 class="h2" style="flex: 1 1 480px; color: #e6e8dc">El campo genera datos. <span style="color: #b9dd73; display: block">¿Los estás aprovechando?</span></h2>
+        <p style="flex: 0 1 420px; margin: 0; color: #b4b8a6; font-size: 17px">Lo que se cosecha, lo que se gasta y lo que se vende queda repartido en planillas, cuadernos y mensajes. Saber qué lote rindió y cuál dio pérdida termina siendo una cuenta que se hace tarde, cuando la campaña ya cerró.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top: 64px; border-top: 1px solid #3d4030">
+        <div style="padding: 36px 32px 8px 0; border-right: 1px solid #3d4030">
+          <div style="font-size: 12px; color: #a9ad98">01</div>
+          <svg style="margin-top: 26px" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9fd17a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><path d="M14 17.5h7M17.5 14v7"></path></svg>
+          <h3 class="h3" style="margin-top: 22px; color: #e6e8dc">Información dispersa</h3>
+          <p style="margin: 10px 0 0; color: #b4b8a6; font-size: 15px; max-width: 300px">Producción, gastos y ventas repartidos entre Excel, WhatsApp, papeles y la memoria de cada encargado.</p>
+        </div>
+        <div style="padding: 36px 32px 8px 32px; border-right: 1px solid #3d4030">
+          <div style="font-size: 12px; color: #a9ad98">02</div>
+          <svg style="margin-top: 26px" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9fd17a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"></path><path d="M5 21V10l4-3 4 3v11"></path><path d="M13 21V13l4-3 4 3v8"></path></svg>
+          <h3 class="h3" style="margin-top: 22px; color: #e6e8dc">Varias fincas, ninguna foto completa</h3>
+          <p style="margin: 10px 0 0; color: #b4b8a6; font-size: 15px; max-width: 300px">Cada finca y cada encargado registra a su manera. Juntar todo para ver el total es un trabajo aparte.</p>
+        </div>
+        <div style="padding: 36px 0 8px 32px">
+          <div style="font-size: 12px; color: #a9ad98">03</div>
+          <svg style="margin-top: 26px" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9fd17a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"></path><path d="M12 17.2v.1"></path></svg>
+          <h3 class="h3" style="margin-top: 22px; color: #e6e8dc">Registros que no responden</h3>
+          <p style="margin: 10px 0 0; color: #b4b8a6; font-size: 15px; max-width: 300px">Tenés los datos, pero no la respuesta: ¿qué cultivo deja más? ¿En qué lote se va la plata?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 LA RESPUESTA -->
+  <section style="background: #b9dd73; color: #10271e; padding: clamp(72px,9vw,112px) 0">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+      <div style="flex: 1 1 420px; min-width: 0">
+        <div class="eyebrow" style="color: #2d4a1a">02 / La respuesta</div>
+        <h2 class="h2" style="margin-top: 20px">Una sola mirada sobre toda tu operación.</h2>
+        <p style="font-size: 18px; margin: 24px 0 0; max-width: 480px; color: #1f3a22">AgroPulse ordena lo que pasa en cada finca y lo convierte en indicadores claros. Las decisiones siguen siendo tuyas: ahora tenés la información para tomarlas.</p>
+      </div>
+      <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+        <div style="display: flex; justify-content: space-between; gap: 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #2d4a1a; padding: 0 20px"><span>Tu pregunta</span><span>Dónde la respondés</span></div>
+        
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; background: #f5f5ef; border-radius: 14px; padding: 18px 20px">
+            <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">¿Qué lote rindió más?</span>
+            <span style="font-size: 14px; color: #2f6b45; font-weight: 700; display: flex; align-items: center; gap: 6px">Rendimiento por hectárea <span aria-hidden="true">→</span></span>
+          </div>
+        
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; background: #f5f5ef; border-radius: 14px; padding: 18px 20px">
+            <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">¿En qué se va la plata?</span>
+            <span style="font-size: 14px; color: #2f6b45; font-weight: 700; display: flex; align-items: center; gap: 6px">Gastos por categoría <span aria-hidden="true">→</span></span>
+          </div>
+        
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; background: #f5f5ef; border-radius: 14px; padding: 18px 20px">
+            <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">¿Qué cultivo deja más?</span>
+            <span style="font-size: 14px; color: #2f6b45; font-weight: 700; display: flex; align-items: center; gap: 6px">Rentabilidad por cultivo <span aria-hidden="true">→</span></span>
+          </div>
+        
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; background: #f5f5ef; border-radius: 14px; padding: 18px 20px">
+            <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px">¿Qué hay que hacer esta semana?</span>
+            <span style="font-size: 14px; color: #2f6b45; font-weight: 700; display: flex; align-items: center; gap: 6px">Calendario y alertas <span aria-hidden="true">→</span></span>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 LA PLATAFORMA -->
+  <section id="plataforma" style="background: #f0f2ec; padding: clamp(72px,9vw,120px) 0">
+    <div class="wrap">
+      <div class="eyebrow" style="color: #64736b">03 / La plataforma</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; justify-content: space-between; margin-top: 20px">
+        <h2 class="h2" style="flex: 1 1 480px">Todo lo que necesitás. <span style="color: #2f8f57; display: block">En un solo lugar.</span></h2>
+        <p style="flex: 0 1 400px; margin: 0; color: #4f5e56; font-size: 17px">Seis módulos que cubren el ciclo completo de la campaña: desde que se siembra un lote hasta que sabés cuánto dejó.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 56px">
+        
+          <div style="background: #fbfbf7; border: 1px solid #dce3dc; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+              <span style="width: 46px; height: 46px; border-radius: 12px; background: #10271e; color: #b9dd73; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px">01</span>
+              <span style="font-size: 12px; color: #64736b; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Mi campo</span>
+            </div>
+            <h3 class="h3" style="margin-top: 8px">Fincas, lotes y campañas</h3>
+            <p style="margin: 0; color: #4f5e56; font-size: 15px">Organizá cada finca con su encargado, sus lotes y los cultivos de cada campaña, con el historial completo de cada lote.</p>
+          </div>
+        
+          <div style="background: #fbfbf7; border: 1px solid #dce3dc; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+              <span style="width: 46px; height: 46px; border-radius: 12px; background: #10271e; color: #b9dd73; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px">02</span>
+              <span style="font-size: 12px; color: #64736b; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Producción</span>
+            </div>
+            <h3 class="h3" style="margin-top: 8px">Rendimiento por hectárea</h3>
+            <p style="margin: 0; color: #4f5e56; font-size: 15px">Cargá la cosecha en toneladas, kilos o quintales y AgroPulse calcula el rendimiento por hectárea al instante.</p>
+          </div>
+        
+          <div style="background: #fbfbf7; border: 1px solid #dce3dc; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+              <span style="width: 46px; height: 46px; border-radius: 12px; background: #10271e; color: #b9dd73; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px">03</span>
+              <span style="font-size: 12px; color: #64736b; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Actividad</span>
+            </div>
+            <h3 class="h3" style="margin-top: 8px">Gastos y ventas</h3>
+            <p style="margin: 0; color: #4f5e56; font-size: 15px">Gastos por categoría asignados a la finca, el lote o el cultivo. Ventas con el total calculado solo y el historial de cada cliente y proveedor.</p>
+          </div>
+        
+          <div style="background: #fbfbf7; border: 1px solid #dce3dc; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+              <span style="width: 46px; height: 46px; border-radius: 12px; background: #10271e; color: #b9dd73; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px">04</span>
+              <span style="font-size: 12px; color: #64736b; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Resultados</span>
+            </div>
+            <h3 class="h3" style="margin-top: 8px">Rentabilidad</h3>
+            <p style="margin: 0; color: #4f5e56; font-size: 15px">Ganancia y rentabilidad por finca, lote, cultivo o campaña, y comparación entre cultivos para ver cuál deja más.</p>
+          </div>
+        
+          <div style="background: #fbfbf7; border: 1px solid #dce3dc; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+              <span style="width: 46px; height: 46px; border-radius: 12px; background: #10271e; color: #b9dd73; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px">05</span>
+              <span style="font-size: 12px; color: #64736b; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Calendario</span>
+            </div>
+            <h3 class="h3" style="margin-top: 8px">Labores y alertas</h3>
+            <p style="margin: 0; color: #4f5e56; font-size: 15px">Programá siembras, fertilizaciones, aplicaciones y cosechas. El sistema te avisa lo vencido y lo que está por vencer.</p>
+          </div>
+        
+          <div style="background: #fbfbf7; border: 1px solid #dce3dc; border-radius: 18px; padding: 30px; display: flex; flex-direction: column; gap: 14px">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+              <span style="width: 46px; height: 46px; border-radius: 12px; background: #10271e; color: #b9dd73; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px">06</span>
+              <span style="font-size: 12px; color: #64736b; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Reportes</span>
+            </div>
+            <h3 class="h3" style="margin-top: 8px">PDF, Excel y control</h3>
+            <p style="margin: 0; color: #4f5e56; font-size: 15px">Reportes de producción, gastos, ventas y rentabilidad en un clic. Permisos por rol y registro de quién cargó qué.</p>
+          </div>
+        
+      </div>
+      <div style="margin-top: 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 15px; color: #4f5e56; border: 1px dashed #b9c6bc; border-radius: 14px; padding: 16px 20px">
+        <span style="background: #10271e; color: #b9dd73; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; letter-spacing: 0.06em">EN CAMINO</span>
+        Mapa de lotes, control de insumos y avisos por correo o mensaje.
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 CÓMO FUNCIONA -->
+  <section id="como-funciona" style="background: #fbfbf7; padding: clamp(72px,9vw,120px) 0">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: clamp(48px,6vw,96px); align-items: center">
+      <!-- Mockup celular -->
+      <div style="flex: 0 1 340px; min-width: 0; margin: 0 auto">
+        <div style="background: #10271e; border-radius: 40px; padding: 12px; box-shadow: 0 40px 70px -30px rgba(16,39,30,0.55)">
+          <div style="background: #fbfbf7; border-radius: 30px; padding: 26px 20px 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+              <span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 16px">Nueva producción</span>
+              <span style="font-size: 11px; color: #64736b">Datos de ejemplo</span>
+            </div>
+            
+              <div>
+                <div style="font-size: 12px; color: #64736b; margin-bottom: 4px">Finca</div>
+                <div style="border: 1px solid #dce3dc; background: #ffffff; border-radius: 10px; padding: 11px 12px; font-size: 14px; font-weight: 500">La Esperanza</div>
+              </div>
+            
+              <div>
+                <div style="font-size: 12px; color: #64736b; margin-bottom: 4px">Lote</div>
+                <div style="border: 1px solid #dce3dc; background: #ffffff; border-radius: 10px; padding: 11px 12px; font-size: 14px; font-weight: 500">Lote 4 · 32 ha</div>
+              </div>
+            
+              <div>
+                <div style="font-size: 12px; color: #64736b; margin-bottom: 4px">Cultivo y campaña</div>
+                <div style="border: 1px solid #dce3dc; background: #ffffff; border-radius: 10px; padding: 11px 12px; font-size: 14px; font-weight: 500">Soja · 2025/26</div>
+              </div>
+            
+              <div>
+                <div style="font-size: 12px; color: #64736b; margin-bottom: 4px">Cantidad cosechada</div>
+                <div style="border: 1px solid #dce3dc; background: #ffffff; border-radius: 10px; padding: 11px 12px; font-size: 14px; font-weight: 500">102 tn</div>
+              </div>
+            
+            <div style="background: #10271e; color: #ffffff; border-radius: 14px; padding: 16px; margin-top: 4px">
+              <div style="font-size: 12px; color: #9fb3a8">Rendimiento calculado</div>
+              <div style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 30px; color: #b9dd73; letter-spacing: -0.02em">3,19 tn/ha</div>
+            </div>
+            <div style="background: #2f8f57; color: #ffffff; text-align: center; border-radius: 12px; padding: 13px; font-weight: 700; font-size: 15px">Guardar</div>
+          </div>
+        </div>
+      </div>
+      <div style="flex: 1 1 480px; min-width: 0">
+        <div class="eyebrow" style="color: #64736b">04 / Cómo funciona</div>
+        <h2 class="h2" style="margin-top: 20px">Del lote al panel, <span style="color: #2f8f57">en tres pasos.</span></h2>
+        <p style="font-size: 17px; color: #4f5e56; margin: 22px 0 0; max-width: 520px">Sin fórmulas ni planillas que mantener. Cada dato se carga una vez y AgroPulse hace las cuentas.</p>
+        <div style="display: flex; flex-direction: column; margin-top: 40px">
+          
+            <div style="display: flex; gap: 22px; padding: 24px 0; border-top: 1px solid #dce3dc">
+              <span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px; color: #2f8f57; min-width: 28px">01</span>
+              <div>
+                <h3 class="h3">Cargás</h3>
+                <p style="margin: 8px 0 0; color: #4f5e56; font-size: 15px; max-width: 480px">El encargado registra cosechas, gastos y ventas desde la compu o el celular, en las fincas que tiene a cargo.</p>
+              </div>
+            </div>
+          
+            <div style="display: flex; gap: 22px; padding: 24px 0; border-top: 1px solid #dce3dc">
+              <span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px; color: #2f8f57; min-width: 28px">02</span>
+              <div>
+                <h3 class="h3">AgroPulse calcula</h3>
+                <p style="margin: 8px 0 0; color: #4f5e56; font-size: 15px; max-width: 480px">Rendimiento por hectárea, totales de venta, ganancia y rentabilidad se calculan solos, sin fórmulas.</p>
+              </div>
+            </div>
+          
+            <div style="display: flex; gap: 22px; padding: 24px 0; border-top: 1px solid #dce3dc">
+              <span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px; color: #2f8f57; min-width: 28px">03</span>
+              <div>
+                <h3 class="h3">Vos analizás</h3>
+                <p style="margin: 8px 0 0; color: #4f5e56; font-size: 15px; max-width: 480px">Panel con gráficos, comparación entre cultivos y reportes en PDF o Excel para compartir con tu socio o tu contador.</p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 PARA QUIÉN -->
+  <section style="background: #10271e; color: #ffffff; padding: clamp(72px,9vw,120px) 0">
+    <div class="wrap">
+      <div class="eyebrow" style="color: #b9dd73">05 / Para quién</div>
+      <h2 class="h2" style="margin-top: 20px; max-width: 760px">Cada uno ve <span style="color: #b9dd73">lo que necesita.</span></h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-top: 56px">
+        <div style="background: #0a1c15; border: 1px solid #24443a; border-radius: 20px; padding: clamp(28px,3vw,40px)">
+          <div style="font-size: 13px; color: #9fb3a8; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Dueño · Administrador</div>
+          <h3 class="h3" style="font-size: 28px; margin-top: 12px">El panorama completo.</h3>
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 26px">
+            
+              <div style="display: flex; gap: 12px; color: #cfdcd4; font-size: 16px"><svg style="flex: none; margin-top: 4px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Ve todas sus fincas juntas o de a una.</span></div>
+            
+              <div style="display: flex; gap: 12px; color: #cfdcd4; font-size: 16px"><svg style="flex: none; margin-top: 4px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Da de alta a los encargados y les asigna fincas.</span></div>
+            
+              <div style="display: flex; gap: 12px; color: #cfdcd4; font-size: 16px"><svg style="flex: none; margin-top: 4px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Compara rentabilidad entre fincas, lotes, cultivos y campañas.</span></div>
+            
+              <div style="display: flex; gap: 12px; color: #cfdcd4; font-size: 16px"><svg style="flex: none; margin-top: 4px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Revisa el registro de actividad: quién cargó qué y cuándo.</span></div>
+            
+          </div>
+        </div>
+        <div style="background: #0a1c15; border: 1px solid #24443a; border-radius: 20px; padding: clamp(28px,3vw,40px)">
+          <div style="font-size: 13px; color: #9fb3a8; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase">Encargado de finca</div>
+          <h3 class="h3" style="font-size: 28px; margin-top: 12px">Su finca, ordenada.</h3>
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 26px">
+            
+              <div style="display: flex; gap: 12px; color: #cfdcd4; font-size: 16px"><svg style="flex: none; margin-top: 4px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Trabaja solo sobre las fincas que tiene a cargo.</span></div>
+            
+              <div style="display: flex; gap: 12px; color: #cfdcd4; font-size: 16px"><svg style="flex: none; margin-top: 4px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Carga producción, gastos y ventas en pocos pasos.</span></div>
+            
+              <div style="display: flex; gap: 12px; color: #cfdcd4; font-size: 16px"><svg style="flex: none; margin-top: 4px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Programa labores y ve las alertas de lo vencido.</span></div>
+            
+              <div style="display: flex; gap: 12px; color: #cfdcd4; font-size: 16px"><svg style="flex: none; margin-top: 4px" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Descarga los reportes de sus fincas.</span></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 PREGUNTAS -->
+  <section id="preguntas" style="background: #fbfbf7; padding: clamp(72px,9vw,120px) 0">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 56px">
+      <div style="flex: 1 1 320px; min-width: 0">
+        <div class="eyebrow" style="color: #64736b">06 / Preguntas frecuentes</div>
+        <h2 class="h2" style="margin-top: 20px">Lo que nos preguntan <span style="color: #2f8f57">en el campo.</span></h2>
+        <p style="font-size: 17px; color: #4f5e56; margin: 22px 0 0; max-width: 380px">¿Te quedó otra duda? Escribinos o pasá por el stand y te la respondemos con la plataforma abierta.</p>
+      </div>
+      <div style="flex: 2 1 520px; min-width: 0; border-top: 1px solid #dce3dc">
+        
+          <details style="border-bottom: 1px solid #dce3dc">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; min-height: 44px">
+              <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">¿Tengo que instalar algo?</span>
+              <span class="plus" style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #c5d0c7; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #2f8f57; transition: transform .2s" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin: 0 0 24px; color: #4f5e56; font-size: 16px; max-width: 620px">No. AgroPulse funciona desde el navegador de la compu, la tablet o el celular. Entrás con tu usuario y listo.</p>
+          </details>
+        
+          <details style="border-bottom: 1px solid #dce3dc">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; min-height: 44px">
+              <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">¿Funciona sin internet?</span>
+              <span class="plus" style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #c5d0c7; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #2f8f57; transition: transform .2s" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin: 0 0 24px; color: #4f5e56; font-size: 16px; max-width: 620px">Necesita conexión para cargar y consultar datos. Hoy, con datos móviles o internet satelital en la finca, alcanza para usarlo desde donde estés.</p>
+          </details>
+        
+          <details style="border-bottom: 1px solid #dce3dc">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; min-height: 44px">
+              <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">¿Sirve si tengo varias fincas?</span>
+              <span class="plus" style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #c5d0c7; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #2f8f57; transition: transform .2s" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin: 0 0 24px; color: #4f5e56; font-size: 16px; max-width: 620px">Sí. Cada finca tiene su encargado y vos ves todo junto o por separado: por finca, lote, cultivo o campaña.</p>
+          </details>
+        
+          <details style="border-bottom: 1px solid #dce3dc">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; min-height: 44px">
+              <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">¿Puedo sacar los números para mi contador?</span>
+              <span class="plus" style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #c5d0c7; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #2f8f57; transition: transform .2s" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin: 0 0 24px; color: #4f5e56; font-size: 16px; max-width: 620px">Sí. Descargás reportes de producción, gastos, ventas y rentabilidad en PDF o Excel, con los filtros que elijas.</p>
+          </details>
+        
+          <details style="border-bottom: 1px solid #dce3dc">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; min-height: 44px">
+              <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">¿Qué unidades y moneda usa?</span>
+              <span class="plus" style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #c5d0c7; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #2f8f57; transition: transform .2s" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin: 0 0 24px; color: #4f5e56; font-size: 16px; max-width: 620px">Las cantidades se cargan en toneladas, kilos o quintales, y los importes en pesos argentinos.</p>
+          </details>
+        
+          <details style="border-bottom: 1px solid #dce3dc">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; min-height: 44px">
+              <span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 19px">¿Quién puede ver mis datos?</span>
+              <span class="plus" style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #c5d0c7; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #2f8f57; transition: transform .2s" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin: 0 0 24px; color: #4f5e56; font-size: 16px; max-width: 620px">Solo las personas que vos das de alta. Cada encargado ve únicamente sus fincas, y queda registrado quién hizo cada cambio.</p>
+          </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 NOSOTROS -->
+  <section id="nosotros" style="background: #e9ede6; padding: clamp(72px,9vw,120px) 0">
+    <div class="wrap">
+      <div class="eyebrow" style="color: #64736b">07 / AgroPulse</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; margin-top: 20px; align-items: flex-start">
+        <div style="flex: 1 1 460px; min-width: 0">
+          <h2 class="h2">Tecnología creada <span style="color: #2f8f57; display: block">desde el territorio.</span></h2>
+          <p style="font-size: 17px; color: #4f5e56; margin: 22px 0 0; max-width: 500px">Nacimos en el NOA con una idea simple: la tecnología agrícola tiene que entender cómo se trabaja realmente en el campo.</p>
+        </div>
+        <blockquote style="flex: 1 1 380px; min-width: 0; margin: 0; background: #10271e; color: #ffffff; border-radius: 20px; padding: 36px">
+          <div style="font-family: Manrope, sans-serif; font-size: 56px; line-height: 0.6; color: #b9dd73" aria-hidden="true">“</div>
+          <p style="font-family: Manrope, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.35; letter-spacing: -0.01em; margin: 14px 0 0">Queremos ser el socio tecnológico que acompaña al productor, no una herramienta más que termina acumulando datos.</p>
+        </blockquote>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 48px">
+        <div style="border-top: 2px solid #10271e; padding-top: 20px"><div style="font-size: 12px; color: #64736b">01</div><h3 class="h3" style="margin-top: 10px">Conocimiento regional</h3><p style="margin: 8px 0 0; color: #4f5e56; font-size: 15px">Soja, maíz, caña de azúcar, limón, poroto: entendemos los cultivos, los tiempos y las condiciones del NOA.</p></div>
+        <div style="border-top: 2px solid #10271e; padding-top: 20px"><div style="font-size: 12px; color: #64736b">02</div><h3 class="h3" style="margin-top: 10px">Tecnología accesible</h3><p style="margin: 8px 0 0; color: #4f5e56; font-size: 15px">Pantallas simples, letra grande y botones cómodos, pensados para usarse también desde el celular.</p></div>
+        <div style="border-top: 2px solid #10271e; padding-top: 20px"><div style="font-size: 12px; color: #64736b">03</div><h3 class="h3" style="margin-top: 10px">Acompañamiento cercano</h3><p style="margin: 8px 0 0; color: #4f5e56; font-size: 15px">Implementación, soporte y capacitación para que la herramienta realmente se use.</p></div>
+      </div>
+      <div style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <span style="font-size: 14px; color: #4f5e56; margin-right: 8px; font-weight: 700">Nuestro equipo:</span>
+        
+          <span style="background: #fbfbf7; border: 1px solid #d3dbd3; border-radius: 999px; padding: 8px 16px; font-size: 14px">Recursos Humanos</span>
+        
+          <span style="background: #fbfbf7; border: 1px solid #d3dbd3; border-radius: 999px; padding: 8px 16px; font-size: 14px">Atención al Cliente</span>
+        
+          <span style="background: #fbfbf7; border: 1px solid #d3dbd3; border-radius: 999px; padding: 8px 16px; font-size: 14px">Dirección de Proyectos</span>
+        
+          <span style="background: #fbfbf7; border: 1px solid #d3dbd3; border-radius: 999px; padding: 8px 16px; font-size: 14px">Operaciones</span>
+        
+          <span style="background: #fbfbf7; border: 1px solid #d3dbd3; border-radius: 999px; padding: 8px 16px; font-size: 14px">Comercial</span>
+        
+          <span style="background: #fbfbf7; border: 1px solid #d3dbd3; border-radius: 999px; padding: 8px 16px; font-size: 14px">Tecnología</span>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 CONTACTO -->
+  <section id="contacto" style="background: #0a1c15; color: #ffffff; padding: clamp(72px,9vw,120px) 0">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: clamp(40px,6vw,88px)">
+      <div style="flex: 1 1 420px; min-width: 0">
+        <div class="eyebrow" style="color: #b9dd73">08 / Hablemos</div>
+        <h2 class="h2" style="margin-top: 20px">¿Querés ver tus números <span style="color: #b9dd73">así de claros?</span></h2>
+        <p style="font-size: 18px; color: #bdcbc3; margin: 24px 0 0; max-width: 460px">Dejanos tus datos y te mostramos AgroPulse funcionando con un caso de ejemplo parecido a tu campo. Si estás en la feria, pasá por el stand [N° DE STAND].</p>
+        <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 40px; font-size: 16px">
+          <a href="mailto:contacto@agropulse.com.ar" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #ffffff"><span style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #24443a; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>contacto@agropulse.com.ar</a>
+          <a href="#contacto" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #ffffff"><span style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #24443a; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5Z"></path></svg></span>WhatsApp: [TU WHATSAPP]</a>
+          <div style="display: flex; align-items: center; gap: 14px; color: #bdcbc3"><span style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #24443a; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b9dd73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></span>San Miguel de Tucumán · Argentina</div>
+        </div>
+      </div>
+      <form name="demo" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="demo-form" style="flex: 1 1 460px; min-width: 0; background: #10271e; border: 1px solid #24443a; border-radius: 22px; padding: clamp(24px,3vw,40px); display: flex; flex-direction: column; gap: 18px" aria-label="Pedir una demo">
+        <input type="hidden" name="form-name" value="demo">
+        <p hidden><label>No completar: <input name="bot-field"></label></p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px">
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #cfdcd4">Nombre y apellido
+            <input type="text" name="nombre" placeholder="Juan Pérez" style="background: #0a1c15; border: 1px solid #2f4d41; border-radius: 12px; color: #ffffff; padding: 14px; min-height: 48px; box-sizing: border-box">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #cfdcd4">WhatsApp
+            <input type="tel" name="whatsapp" placeholder="381 555 0000" style="background: #0a1c15; border: 1px solid #2f4d41; border-radius: 12px; color: #ffffff; padding: 14px; min-height: 48px; box-sizing: border-box">
+          </label>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px">
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #cfdcd4">Localidad
+            <input type="text" name="localidad" placeholder="Ej.: Monteros, Tucumán" style="background: #0a1c15; border: 1px solid #2f4d41; border-radius: 12px; color: #ffffff; padding: 14px; min-height: 48px; box-sizing: border-box">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #cfdcd4">¿Cuántas fincas manejás?
+            <select name="fincas" style="background: #0a1c15; border: 1px solid #2f4d41; border-radius: 12px; color: #ffffff; padding: 14px; min-height: 48px; box-sizing: border-box">
+              <option>1 finca</option>
+              <option>2 a 3 fincas</option>
+              <option>4 o más</option>
+              <option>Asesoro a productores</option>
+            </select>
+          </label>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #cfdcd4">¿Qué te gustaría resolver?
+          <textarea name="mensaje" rows="4" placeholder="Ej.: saber qué lote rinde más, ordenar los gastos de la campaña…" style="background: #0a1c15; border: 1px solid #2f4d41; border-radius: 12px; color: #ffffff; padding: 14px; resize: vertical"></textarea>
+        </label>
+        <button type="submit" style="background: #b9dd73; color: #0a1c15; border: 0; border-radius: 999px; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 17px; padding: 16px 24px; min-height: 52px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px">Quiero una demo <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="background: #0a1c15; color: #8fa69a; border-top: 1px solid #1d3a30; padding: 28px 0; font-size: 14px">
+    <div class="wrap" style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+      <span><strong style="color: #ffffff; font-family: Manrope, sans-serif">AgroPulse S.A.</strong> · Gestión agropecuaria para el NOA</span>
+      <span>San Miguel de Tucumán · 2026</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // Envía el formulario a Netlify Forms y después lleva al login de la demo.
+  (function () {
+    var LOGIN_URL = "https://agropulsenoa.netlify.app/login";
+    var form = document.getElementById("demo-form");
+    if (!form) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var body = new URLSearchParams(new FormData(form)).toString();
+      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body })
+        .catch(function () {})
+        .finally(function () { window.location.href = LOGIN_URL; });
+    });
+  })();
+</script>
+</body>
+</html>

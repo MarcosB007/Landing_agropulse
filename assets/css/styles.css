@@ -1,0 +1,11 @@
+body{margin:0}
+a{color:#b9dd73}a:hover{color:#d4ef9f}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px);box-sizing:border-box}
+.eyebrow{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.h2{font-family:Manrope,sans-serif;font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:0;font-size:clamp(36px,5.2vw,64px)}
+.h3{font-family:Manrope,sans-serif;font-weight:700;letter-spacing:-.02em;margin:0;font-size:22px}
+details summary{list-style:none;cursor:pointer}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+input,select,textarea{font:inherit}
+html{scroll-behavior:smooth}
